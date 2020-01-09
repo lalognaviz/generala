@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>ANOTADOR</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Statusbar overlay -->
+       <!-- <div class="statusbar"></div> -->
+    
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page">
+    
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                    <div class="title">Anotador</div>
+                    </div>
+                </div>
+        
+                <!-- Toolbar -->
+               <div class="toolbar toolbar-bottom-md"> 
+                   <!--  <div class="toolbar-inner"> -->
+                    <!-- Toolbar links -->
+                                 
+                    
+                   <!--  </div> -->
+                </div>
+        
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                <div class="list">
+    <li class="item-content item-input">
+     <div class="item-inner">
+        <div class="item-input-wrap">
+          <input type="text" placeholder="Jugador 1" class="nomjug">
+          <span class="input-clear-button"></span>
+        </div>
+      </div>
+    </li>
+        <li class="item-content item-input">
+      <div class="item-inner">
+        <div class="item-input-wrap">
+          <input type="text" placeholder="Jugador 2" class="nomjug">
+          <span class="input-clear-button"></span>
+        </div>
+      </div>      
+    </li>  
+    <li class="oculto item-content item-input" id="j3">
+     <div class="item-inner">
+        <div class="item-input-wrap">
+          <input type="text" placeholder="Jugador 3" class="nomjug">
+          <span class="input-clear-button"></span>
+        </div>
+      </div>
+    </li>
+        <li class="item-content item-input oculto" id="j4">
+     <div class="item-inner">
+        <div class="item-input-wrap">
+          <input type="text" placeholder="Jugador 4" class="nomjug">
+          <span class="input-clear-button"></span>
+        </div>
+      </div>
+    </li>
+    <li class="item-content item-input oculto" id="j5">
+     <div class="item-inner">
+        <div class="item-input-wrap">
+          <input type="text" placeholder="Jugador 5" class="nomjug">
+          <span class="input-clear-button"></span>
+        </div>
+      </div>
+    </li>
+    <li class="item-content item-input oculto" id="j6">
+     <div class="item-inner">
+        <div class="item-input-wrap">
+          <input type="text" placeholder="Jugador 6" class="nomjug">
+          <span class="input-clear-button"></span>
+        </div>
+      </div>
+    </li>
+</div>
+     <!-- Popup de añadir jugadores -->
+     <div class="block">
+        <!-- Open About Popup -->
+        <p><a class="col button button-fill button-round" href="/anota/" data-view=".page-content">Iniciar</a></p>
+        <p><a class="col button button-fill button-round link popup-open" href="#" data-popup=".popup-about">Cantidad de jugadores</a></p>
+     </div>
+     <div class="popup popup-about">
+    <div class="block">
+      <p>Seleccione la cantidad de jugadores para la partida:</p>
+      <!-- Close Popup -->
+      
+       <!-- deje el texto solo con el numero asi se puede pasar el dato al script -->
+      <p><a class="col button button-fill button-round link popup-close elige" href="#" id="agrjug2">2</a></p>      
+      <p><a class="col button button-fill button-round link popup-close elige" href="#" id="agrjug3">3</a></p>      
+      <p><a class="col button button-fill button-round link popup-close elige" href="#" id="agrjug4">4</a></p>
+      <p><a class="col button button-fill button-round link popup-close elige" href="#" id="agrjug5">5</a></p>
+      <p><a class="col button button-fill button-round link popup-close elige" href="#" id="agrjug6">6</a></p>
+    </div>
+  </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>

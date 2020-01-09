@@ -1,0 +1,153 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+  <div class="page" data-name="anota"> 
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+        <div class="left">
+            <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+            </a>
+        </div>
+        <div class="title">Anotador</div>
+        </div> 
+        
+        
+        
+    </div>
+    <div class="page-content">        
+        
+        <div class="data-table">
+          <table>
+            <thead>
+              <tr>
+                
+                <th class="label-cell"> </th>
+                
+                <th class="numeric-cell"><button class="button button-small button-fill color-blue" id='puntos1'>jugador 1</button></th>
+                <th class="numeric-cell"><button class="button button-small button-fill color-blue" id='puntos2'>jugador 2</button></th>
+                <th class="numeric-cell"><button class="j3 button button-small button-fill color-blue" id='puntos3'>jugador 3</button></th>
+                <th class="numeric-cell"><button class="j4 button button-small button-fill color-blue" id='puntos4'>jugador 4</button></th>
+                <th class="numeric-cell"><button class="j5 button button-small button-fill color-blue" id='puntos5'>jugador 5</button></th>
+                <th class="numeric-cell"><button class="j6 button button-small button-fill color-blue" id='puntos6'>jugador 6</button></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="label-cell">1</td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d1j1'>-</button></td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d1j2'>-</button></td>
+                <td class="numeric-cell"><button class="j3 dado button button-small button-fill color-gray oculto" id='d1j3'>-</button></td>
+                <td class="numeric-cell"><button class="j4 dado button button-small button-fill color-gray oculto" id='d1j4'>-</button></td>
+                <td class="numeric-cell"><button class="j5 dado button button-small button-fill color-gray oculto" id='d1j5'>-</button></td>
+                <td class="numeric-cell"><button class="j6 dado button button-small button-fill color-gray oculto" id='d1j6'>-</button></td>              
+              </tr>
+              <tr>
+                <td class="label-cell">2</td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d2j1'>-</button></td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d2j2'>-</button></td>
+                <td class="numeric-cell"><button class="j3 dado button button-small button-fill color-gray oculto" id='d2j3'>-</button></td>
+                <td class="numeric-cell"><button class="j4 dado button button-small button-fill color-gray oculto" id='d2j4'>-</button></td>
+                <td class="numeric-cell"><button class="j5 dado button button-small button-fill color-gray oculto" id='d2j5'>-</button></td>
+                <td class="numeric-cell"><button class="j6 dado button button-small button-fill color-gray oculto" id='d2j6'>-</button></td>   
+                
+              </tr>
+              <tr>
+                <td class="label-cell">3</td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d3j1'>-</button></td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d3j2'>-</button></td>
+                <td class="numeric-cell"><button class="j3 dado button button-small button-fill color-gray oculto" id='d3j3'>-</button></td>
+                <td class="numeric-cell"><button class="j4 dado button button-small button-fill color-gray oculto" id='d3j4'>-</button></td>
+                <td class="numeric-cell"><button class="j5 dado button button-small button-fill color-gray oculto" id='d3j5'>-</button></td>
+                <td class="numeric-cell"><button class="j6 dado button button-small button-fill color-gray oculto" id='d3j6'>-</button></td>   
+              </tr>
+              <tr>
+                <td class="label-cell">4</td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d4j1'>-</button></td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d4j2'>-</button></td>
+                <td class="numeric-cell"><button class="j3 dado button button-small button-fill color-gray oculto" id='d4j3'>-</button></td>
+                <td class="numeric-cell"><button class="j4 dado button button-small button-fill color-gray oculto" id='d4j4'>-</button></td>
+                <td class="numeric-cell"><button class="j5 dado button button-small button-fill color-gray oculto" id='d4j5'>-</button></td>
+                <td class="numeric-cell"><button class="j6 dado button button-small button-fill color-gray oculto" id='d4j6'>-</button></td>   
+              </tr>
+              <tr>
+                <td class="label-cell">5</td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d5j1'>-</button></td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d5j2'>-</button></td>
+                <td class="numeric-cell"><button class="j3 dado button button-small button-fill color-gray oculto" id='d5j3'>-</button></td>
+                <td class="numeric-cell"><button class="j4 dado button button-small button-fill color-gray oculto" id='d5j4'>-</button></td>
+                <td class="numeric-cell"><button class="j5 dado button button-small button-fill color-gray oculto" id='d5j5'>-</button></td>
+                <td class="numeric-cell"><button class="j6 dado button button-small button-fill color-gray oculto" id='d5j6'>-</button></td>   
+              </tr>
+              <tr>
+                <td class="label-cell">6</td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d6j1'>-</button></td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d6j2'>-</button></td>
+                <td class="numeric-cell"><button class="j3 dado button button-small button-fill color-gray oculto" id='d6j3'>-</button></td>
+                <td class="numeric-cell"><button class="j4 dado button button-small button-fill color-gray oculto" id='d6j4'>-</button></td>
+                <td class="numeric-cell"><button class="j5 dado button button-small button-fill color-gray oculto" id='d6j5'>-</button></td>
+                <td class="numeric-cell"><button class="j6 dado button button-small button-fill color-gray oculto" id='d6j6'>-</button></td>   
+              </tr>
+               <tr>
+                <td class="label-cell">Escalera</td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d7j1'>-</button></td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d7j2'>-</button></td>
+                <td class="numeric-cell"><button class="j3 dado button button-small button-fill color-gray oculto" id='d7j3'>-</button></td>
+                <td class="numeric-cell"><button class="j4 dado button button-small button-fill color-gray oculto" id='d7j4'>-</button></td>
+                <td class="numeric-cell"><button class="j5 dado button button-small button-fill color-gray oculto" id='d7j5'>-</button></td>
+                <td class="numeric-cell"><button class="j6 dado button button-small button-fill color-gray oculto" id='d7j6'>-</button></td>   
+              </tr>
+              <tr>
+                <td class="label-cell">Full</td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d8j1'>-</button></td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d8j2'>-</button></td>
+                <td class="numeric-cell"><button class="j3 dado button button-small button-fill color-gray oculto" id='d8j3'>-</button></td>
+                <td class="numeric-cell"><button class="j4 dado button button-small button-fill color-gray oculto" id='d8j4'>-</button></td>
+                <td class="numeric-cell"><button class="j5 dado button button-small button-fill color-gray oculto" id='d8j5'>-</button></td>
+                <td class="numeric-cell"><button class="j6 dado button button-small button-fill color-gray oculto" id='d8j6'>-</button></td>   
+              </tr>
+              <tr>
+                <td class="label-cell">Poker</td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d9j1'>-</button></td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d9j2'>-</button></td>
+                <td class="numeric-cell"><button class="j3 dado button button-small button-fill color-gray oculto" id='d9j3'>-</button></td>
+                <td class="numeric-cell"><button class="j4 dado button button-small button-fill color-gray oculto" id='d9j4'>-</button></td>
+                <td class="numeric-cell"><button class="j5 dado button button-small button-fill color-gray oculto" id='d9j5'>-</button></td>
+                <td class="numeric-cell"><button class="j6 dado button button-small button-fill color-gray oculto" id='d9j6'>-</button></td>   
+              </tr>
+              <tr>
+                <td class="label-cell">Generala</td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d10j1'>-</button></td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d10j2'>-</button></td>
+                <td class="numeric-cell"><button class="j3 dado button button-small button-fill color-gray oculto" id='d10j3'>-</button></td>
+                <td class="numeric-cell"><button class="j4 dado button button-small button-fill color-gray oculto" id='d10j4'>-</button></td>
+                <td class="numeric-cell"><button class="j5 dado button button-small button-fill color-gray oculto" id='d10j5'>-</button></td>
+                <td class="numeric-cell"><button class="j6 dado button button-small button-fill color-gray oculto" id='d10j6'>-</button></td>   
+              </tr>
+              <tr>
+                <td class="label-cell">Generala Doble</td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d11j1'>-</button></td>
+                <td class="numeric-cell"><button class="dado button button-small button-fill color-gray visible" id='d11j2'>-</button></td>
+                <td class="numeric-cell"><button class="j3 dado button button-small button-fill color-gray oculto" id='d11j3'>-</button></td>
+                <td class="numeric-cell"><button class="j4 dado button button-small button-fill color-gray oculto" id='d11j4'>-</button></td>
+                <td class="numeric-cell"><button class="j5 dado button button-small button-fill color-gray oculto" id='d11j5'>-</button></td>
+                <td class="numeric-cell"><button class="j6 dado button button-small button-fill color-gray oculto" id='d11j6'>-</button></td>   
+              </tr>
+              <tr>
+                <td class="label-cell">Total</td>
+                <td class="numeric-cell"><button class="button button-small button-fill color-gray" id='totj1'>-</button></td>
+                <td class="numeric-cell"><button class="button button-small button-fill color-gray" id='totj2'>-</button></td>
+                <td class="numeric-cell"><button class="j3 button button-small button-fill color-gray" id='totj3'>-</button></td>
+                <td class="numeric-cell"><button class="j4 button button-small button-fill color-gray" id='totj4'>-</button></td>
+                <td class="numeric-cell"><button class="j5 button button-small button-fill color-gray" id='totj5'>-</button></td>
+                <td class="numeric-cell"><button class="j6 button button-small button-fill color-gray" id='totj6'>-</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>     
+        
+      <p class="row">
+           
+           <button class="col button button-big button-raised button-fill" id='reinicio'>Reinicio</button>
+           <button class="col button button-big button-outline button-raised" id='teminar'>Terminar</button>
+     </p>
+    </div> 
